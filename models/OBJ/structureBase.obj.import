@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/structureBase.obj-3aeb5aac4d1a044c0f41a99293a7b714.mesh"
+
+[deps]
+
+files=[ "res://.import/structureBase.obj-3aeb5aac4d1a044c0f41a99293a7b714.mesh" ]
+
+source_file="res://models/OBJ/structureBase.obj"
+dest_files=[ "res://.import/structureBase.obj-3aeb5aac4d1a044c0f41a99293a7b714.mesh", "res://.import/structureBase.obj-3aeb5aac4d1a044c0f41a99293a7b714.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

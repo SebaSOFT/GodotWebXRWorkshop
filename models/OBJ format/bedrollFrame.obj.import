@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bedrollFrame.obj-fad06c32b245b1faf7afa2b189238aed.mesh"
+
+[deps]
+
+files=[ "res://.import/bedrollFrame.obj-fad06c32b245b1faf7afa2b189238aed.mesh" ]
+
+source_file="res://models/OBJ format/bedrollFrame.obj"
+dest_files=[ "res://.import/bedrollFrame.obj-fad06c32b245b1faf7afa2b189238aed.mesh", "res://.import/bedrollFrame.obj-fad06c32b245b1faf7afa2b189238aed.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

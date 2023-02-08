@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fenceFortified.obj-953a8a3630c3aacdca95172b8960981b.mesh"
+
+[deps]
+
+files=[ "res://.import/fenceFortified.obj-953a8a3630c3aacdca95172b8960981b.mesh" ]
+
+source_file="res://models/OBJ/fenceFortified.obj"
+dest_files=[ "res://.import/fenceFortified.obj-953a8a3630c3aacdca95172b8960981b.mesh", "res://.import/fenceFortified.obj-953a8a3630c3aacdca95172b8960981b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

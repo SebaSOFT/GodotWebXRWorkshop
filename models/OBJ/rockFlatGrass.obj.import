@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rockFlatGrass.obj-4df3f118961e87c4adb5b25fed519920.mesh"
+
+[deps]
+
+files=[ "res://.import/rockFlatGrass.obj-4df3f118961e87c4adb5b25fed519920.mesh" ]
+
+source_file="res://models/OBJ/rockFlatGrass.obj"
+dest_files=[ "res://.import/rockFlatGrass.obj-4df3f118961e87c4adb5b25fed519920.mesh", "res://.import/rockFlatGrass.obj-4df3f118961e87c4adb5b25fed519920.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

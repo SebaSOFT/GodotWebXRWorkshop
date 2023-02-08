@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/structureRoof.obj-714b7be645ed8cd77e22bf2f2a97732f.mesh"
+
+[deps]
+
+files=[ "res://.import/structureRoof.obj-714b7be645ed8cd77e22bf2f2a97732f.mesh" ]
+
+source_file="res://models/OBJ/structureRoof.obj"
+dest_files=[ "res://.import/structureRoof.obj-714b7be645ed8cd77e22bf2f2a97732f.mesh", "res://.import/structureRoof.obj-714b7be645ed8cd77e22bf2f2a97732f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

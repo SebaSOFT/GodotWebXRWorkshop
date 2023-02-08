@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/AmbienteNoche.tscn" type="PackedScene" id=1]
+[ext_resource path="res://models/OBJ/rockC.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://models/OBJ/floor.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://models/OBJ/rockFlatGrass.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://scenes/Landscape.lmbake" type="BakedLightmapData" id=5]
+
+[node name="Landscape" type="Spatial"]
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.817503, 0 )
+shadow_enabled = true
+shadow_bias = 0.0
+
+[node name="MedioAmbiente" parent="." instance=ExtResource( 1 )]
+
+[node name="BakedLightmap" type="BakedLightmap" parent="."]
+extents = Vector3( 24.4375, 10, 30.9127 )
+quality = 2
+use_hdr = false
+environment_mode = 1
+light_data = ExtResource( 5 )
+
+[node name="MeshInstance" type="MeshInstance" parent="BakedLightmap"]
+use_in_baked_light = true
+mesh = ExtResource( 4 )
+skeleton = NodePath("")
+
+[node name="MeshInstance2" type="MeshInstance" parent="BakedLightmap"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15494, -0.321835 )
+use_in_baked_light = true
+mesh = ExtResource( 2 )
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3" type="MeshInstance" parent="BakedLightmap"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.482995, 0.165135, -0.0552369 )
+mesh = ExtResource( 3 )

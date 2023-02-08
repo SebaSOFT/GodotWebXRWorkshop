@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fishingStand.obj-2a52a205173993a4762c813759d839ff.mesh"
+
+[deps]
+
+files=[ "res://.import/fishingStand.obj-2a52a205173993a4762c813759d839ff.mesh" ]
+
+source_file="res://models/OBJ/fishingStand.obj"
+dest_files=[ "res://.import/fishingStand.obj-2a52a205173993a4762c813759d839ff.mesh", "res://.import/fishingStand.obj-2a52a205173993a4762c813759d839ff.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
