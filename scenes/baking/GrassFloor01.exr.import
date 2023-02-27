@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/MeshInstance2.exr-58865a3d4625e188ce12c83ebc433d01.stex"
+path="res://.import/GrassFloor01.exr-ff10c4622d6217d4fe3b72accf8635b8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/MeshInstance2.exr"
-dest_files=[ "res://.import/MeshInstance2.exr-58865a3d4625e188ce12c83ebc433d01.stex" ]
+source_file="res://scenes/baking/GrassFloor01.exr"
+dest_files=[ "res://.import/GrassFloor01.exr-ff10c4622d6217d4fe3b72accf8635b8.stex" ]
 
 [params]
 

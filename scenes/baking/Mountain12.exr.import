@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/MeshInstance.png-234e4c819946e8aa6d29dff27e79e8b7.stex"
+path="res://.import/Mountain12.exr-9ac1b109d6e58fecf491d6d7b4f4d24c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/MeshInstance.png"
-dest_files=[ "res://.import/MeshInstance.png-234e4c819946e8aa6d29dff27e79e8b7.stex" ]
+source_file="res://scenes/baking/Mountain12.exr"
+dest_files=[ "res://.import/Mountain12.exr-9ac1b109d6e58fecf491d6d7b4f4d24c.stex" ]
 
 [params]
 
@@ -23,7 +23,7 @@ flags/repeat=false
 flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=true
+flags/srgb=false
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

@@ -1,0 +1,9 @@
+[gd_resource type="SpatialMaterial" format=2]
+
+[resource]
+resource_name = "rock"
+albedo_color = Color( 0.915094, 0.823513, 0.62589, 1 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_on_uv2 = true
+ao_texture_channel = 0

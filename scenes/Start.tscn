@@ -5,7 +5,12 @@
 [node name="World" type="Node"]
 
 [node name="Landscape" parent="." instance=ExtResource( 1 )]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ClippedCamera" type="ClippedCamera" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.477633, 2.54807 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.711371, 0.904512, 0.724049 )
 current = true
+near = 0.01
+far = 10000.0
