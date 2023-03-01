@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://models/OBJ/grassLarge.obj" type="ArrayMesh" id=1]
+
+[node name="grassLarge" type="Spatial"]
+
+[node name="grassLarge" type="MeshInstance" parent="."]
+generate_lightmap = false
+mesh = ExtResource( 1 )

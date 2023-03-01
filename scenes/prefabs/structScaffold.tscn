@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://models/OBJ/structureBase.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.245338, 0.0195144, 0.243967 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.0192672, 0.25971, 0.0212471 )
+
+[node name="Scaffold" type="Spatial"]
+
+[node name="structureBase" type="MeshInstance" parent="."]
+use_in_baked_light = true
+lightmap_scale = 1
+mesh = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="structureBase"]
+collision_layer = 32
+collision_mask = 0
+
+[node name="CollisionBase" type="CollisionShape" parent="structureBase/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.517715, 0 )
+shape = SubResource( 1 )
+
+[node name="CollisionBase2" type="CollisionShape" parent="structureBase/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.228795, 0.255517, 0.228528 )
+shape = SubResource( 2 )
+
+[node name="CollisionBase3" type="CollisionShape" parent="structureBase/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.228795, 0.255517, -0.22764 )
+shape = SubResource( 2 )
+
+[node name="CollisionBase4" type="CollisionShape" parent="structureBase/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.228371, 0.255517, -0.22764 )
+shape = SubResource( 2 )
+
+[node name="CollisionBase5" type="CollisionShape" parent="structureBase/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.228291, 0.255517, 0.228528 )
+shape = SubResource( 2 )

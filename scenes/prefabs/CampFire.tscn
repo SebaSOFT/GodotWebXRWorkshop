@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://models/OBJ/campfire.obj" type="ArrayMesh" id=1]
+
+[node name="CampFire" type="Spatial"]
+
+[node name="campfire" type="MeshInstance" parent="."]
+use_in_baked_light = true
+lightmap_scale = 1
+mesh = ExtResource( 1 )
+
+[node name="fireLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0794394, 0 )
+light_color = Color( 0.972549, 0.882353, 0.521569, 1 )
+shadow_enabled = true
+shadow_bias = 0.0

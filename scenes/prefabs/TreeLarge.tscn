@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://models/OBJ/treeLarge.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://scenes/prefabs/Grass.tscn" type="PackedScene" id=2]
+
+[sub_resource type="CylinderShape" id=6]
+height = 1.7287
+radius = 0.0621484
+
+[node name="TreeLarge" type="Spatial"]
+
+[node name="TreeLargeMesh" type="MeshInstance" parent="."]
+use_in_baked_light = true
+mesh = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="TreeLargeMesh"]
+collision_layer = 32
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="TreeLargeMesh/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.858361, 0 )
+shape = SubResource( 6 )
+
+[node name="Grass01" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.253 )
+
+[node name="Grass02" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.651291, 0, -0.758828, 0, 1, 0, 0.758828, 0, -0.651291, 0.256396, 0, 0.100732 )
+
+[node name="Grass03" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.809027, 0, 0.587771, 0, 1, 0, -0.587771, 0, 0.809027, 0.16169, -1.19209e-07, -0.166794 )
+
+[node name="Grass04" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000352815, 0, -0.237009 )
+
+[node name="Grass05" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.638244, 0, -0.769834, 0, 1, 0, 0.769834, 0, 0.638244, -0.211884, 0, -0.130136 )
+
+[node name="Grass06" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.53908, 0, 0.842255, 0, 1, 0, -0.842255, 0, -0.53908, -0.229044, 0, 0.0958632 )

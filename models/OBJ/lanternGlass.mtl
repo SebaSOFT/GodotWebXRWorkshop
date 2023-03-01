@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl metal
+Kd 0.2156862 0.7686275 0.654902
+
+newmtl light
+Kd 0.9607843 0.7254902 0.2588235
+

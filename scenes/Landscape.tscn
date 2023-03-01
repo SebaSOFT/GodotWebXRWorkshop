@@ -1,8 +1,8 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://scenes/AmbienteNoche.tscn" type="PackedScene" id=1]
 [ext_resource path="res://models/OBJ/rockC.obj" type="ArrayMesh" id=2]
-[ext_resource path="res://models/OBJ/floor.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://scenes/prefabs/Palet.tscn" type="PackedScene" id=3]
 [ext_resource path="res://models/OBJ/rockFlatGrass.obj" type="ArrayMesh" id=4]
 [ext_resource path="res://scenes/baking/Landscape.lmbake" type="BakedLightmapData" id=5]
 [ext_resource path="res://models/OBJ/rockA.obj" type="ArrayMesh" id=6]
@@ -11,9 +11,16 @@
 [ext_resource path="res://models/OBJ/rockB.obj" type="ArrayMesh" id=9]
 [ext_resource path="res://models/col_rockC.tres" type="Shape" id=10]
 [ext_resource path="res://models/col_rockA.tres" type="Shape" id=11]
-[ext_resource path="res://models/OBJ/tree.obj" type="ArrayMesh" id=12]
-[ext_resource path="res://models/OBJ/treeLarge.obj" type="ArrayMesh" id=13]
-[ext_resource path="res://models/OBJ/fenceFortified.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://scenes/prefabs/Tree.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/prefabs/TreeLarge.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/prefabs/FenceFortified.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/prefabs/Grass.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/prefabs/CampFire.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/prefabs/structRamp.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/prefabs/structScaffold.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/prefabs/Lantern.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/prefabs/structTold.tscn" type="PackedScene" id=20]
+[ext_resource path="res://models/OBJ/bedrollPacked.obj" type="ArrayMesh" id=21]
 
 [sub_resource type="ConcavePolygonShape" id=1]
 data = PoolVector3Array( -0.557, 0.0825, 0.4668, -0.5502, 0, 0.5156, -0.5677, 0.0825, 0.4854, -0.7091, 0.0825, 0.4037, -0.7192, 0, 0.3609, -0.6784, 0.0825, 0.3506, -0.7192, 0, 0.3609, -0.7091, 0.0825, 0.4037, -0.7439, 0, 0.4037, 0.6414, 0, -0.3252, 0.6441, 0.0825, -0.4737, 0.7271, 0, -0.4737, 0.6441, 0.0825, -0.4737, 0.6414, 0, -0.3252, 0.5583, 0.0825, -0.3251, -0.3443, 0.0825, -0.3707, -0.4045, 0, -0.4146, -0.3696, 0.0825, -0.4146, -0.4045, 0, -0.4146, -0.3443, 0.0825, -0.3707, -0.3899, 0, -0.3893, 0.7648, 0.0825, 0.3111, 0.7648, 0.0825, 0.1279, 0.8347, 0.0825, 0.2489, 0.7598, 0.0825, 0.3785, 0.7648, 0.0825, 0.3111, 0.8347, 0.0825, 0.2489, 0.7648, 0.0825, 0.3111, 0.7598, 0.0825, 0.3785, 0.6481, 0.0825, 0.3785, -0.4351, 0, -0.4196, -0.7011, 0.0825, -0.3477, -0.7426, 0, -0.4196, -0.7011, 0.0825, -0.3477, -0.4351, 0, -0.4196, -0.4767, 0.0825, -0.3477, -0.1462, 0, -0.4146, -0.2282, 0.0825, -0.4962, -0.2108, 0, -0.5264, -0.2282, 0.0825, -0.4962, -0.1462, 0, -0.4146, -0.1811, 0.0825, -0.4146, 0.6441, 0.0825, -0.4737, 0.5734, 0, -0.74, 0.7271, 0, -0.4737, 0.5734, 0, -0.74, 0.6441, 0.0825, -0.4737, 0.5319, 0.0825, -0.6681, -0.8134, 0.0825, -0.1533, -0.7426, 0, -0.4196, -0.7011, 0.0825, -0.3477, -0.7426, 0, -0.4196, -0.8134, 0.0825, -0.1533, -0.8964, 0, -0.1533, -0.6619, 0.0825, 0.4854, -0.7439, 0, 0.4037, -0.7091, 0.0825, 0.4037, -0.7439, 0, 0.4037, -0.6619, 0.0825, 0.4854, -0.6794, 0, 0.5156, 0.2297, 0.0825, -0.4139, -0.0193, 0, -0.3182, 0.1466, 0, -0.414, -0.0193, 0, -0.3182, 0.2297, 0.0825, -0.4139, -0.0147, 0.165, -0.2248, -0.0147, 0.165, -0.2248, 0.2297, 0.0825, -0.4139, 0.3171, 0.0825, -0.4644, -0.0147, 0.165, -0.2248, 0.3171, 0.0825, -0.4644, 0.3171, 0.165, -0.4163, 0.2297, 0.0825, -0.4139, 0.1466, 0, -0.414, -0.0193, 0, -0.3182, -0.0193, 0, -0.3182, -0.0147, 0.165, -0.2248, 0.2297, 0.0825, -0.4139, -0.0147, 0.165, -0.2248, 0.3171, 0.0825, -0.4644, 0.2297, 0.0825, -0.4139, -0.0147, 0.165, -0.2248, 0.3171, 0.165, -0.4163, 0.3171, 0.0825, -0.4644, -0.3443, 0.0825, -0.3707, -0.4095, 0, -0.3752, -0.3899, 0, -0.3893, -0.4095, 0, -0.3752, -0.3443, 0.0825, -0.3707, -0.4473, 0.0825, -0.297, -0.3443, 0.0825, -0.3707, -0.2976, 0.165, -0.3531, -0.4473, 0.0825, -0.297, -0.2976, 0.165, -0.3531, -0.3443, 0.0825, -0.3707, -0.3022, 0.0825, -0.4009, -0.4473, 0.0825, -0.297, -0.2976, 0.165, -0.3531, -0.6789, 0.165, -0.0801, -0.4473, 0.0825, -0.297, -0.6789, 0.165, -0.0801, -0.7226, 0.0825, -0.0999, -0.3443, 0.0825, -0.3707, -0.3899, 0, -0.3893, -0.4095, 0, -0.3752, -0.4095, 0, -0.3752, -0.4473, 0.0825, -0.297, -0.3443, 0.0825, -0.3707, -0.3443, 0.0825, -0.3707, -0.4473, 0.0825, -0.297, -0.2976, 0.165, -0.3531, -0.2976, 0.165, -0.3531, -0.3022, 0.0825, -0.4009, -0.3443, 0.0825, -0.3707, -0.4473, 0.0825, -0.297, -0.6789, 0.165, -0.0801, -0.2976, 0.165, -0.3531, -0.4473, 0.0825, -0.297, -0.7226, 0.0825, -0.0999, -0.6789, 0.165, -0.0801, -0.6794, 0, 0.5156, -0.5677, 0.0825, 0.4854, -0.5502, 0, 0.5156, -0.5677, 0.0825, 0.4854, -0.6794, 0, 0.5156, -0.6619, 0.0825, 0.4854, 0.1899, 0.0825, 0.4961, 0.3171, 0.165, 0.5216, 0.3171, 0.0825, 0.5696, 0.1899, 0.0825, 0.4961, 0.073, 0.165, 0.3806, 0.3171, 0.165, 0.5216, 0.1899, 0.0825, 0.4961, 0.0778, 0, 0.4794, 0.073, 0.165, 0.3806, 0.0778, 0, 0.4794, 0.1899, 0.0825, 0.4961, 0.1276, 0, 0.5082, 0.1899, 0.0825, 0.4961, 0.3171, 0.0825, 0.5696, 0.3171, 0.165, 0.5216, 0.1899, 0.0825, 0.4961, 0.3171, 0.165, 0.5216, 0.073, 0.165, 0.3806, 0.1899, 0.0825, 0.4961, 0.073, 0.165, 0.3806, 0.0778, 0, 0.4794, 0.0778, 0, 0.4794, 0.1276, 0, 0.5082, 0.1899, 0.0825, 0.4961, 0.5583, 0.0825, -0.3251, 0.5319, 0.0825, -0.6681, 0.6441, 0.0825, -0.4737, 0.5319, 0.0825, -0.6681, 0.5583, 0.0825, -0.3251, 0.3171, 0.0825, -0.4644, 0.5319, 0.0825, -0.6681, 0.3171, 0.0825, -0.4644, 0.3074, 0.0825, -0.6681, 0.3074, 0.0825, -0.6681, 0.3171, 0.0825, -0.4644, 0.2297, 0.0825, -0.4139, 0.3074, 0.0825, -0.6681, 0.2297, 0.0825, -0.4139, 0.1951, 0.0825, -0.4737, 0.89, 0, 0.2489, 0.7648, 0.0825, 0.1279, 0.8064, 0, 0.1041, 0.7648, 0.0825, 0.1279, 0.89, 0, 0.2489, 0.8347, 0.0825, 0.2489, -0.2108, 0, -0.5264, -0.3225, 0.0825, -0.4962, -0.3399, 0, -0.5264, -0.3225, 0.0825, -0.4962, -0.2108, 0, -0.5264, -0.2282, 0.0825, -0.4962, -0.5502, 0, 0.5156, -0.206, 0.165, 0.5804, -0.1967, 0, 0.6759, -0.206, 0.165, 0.5804, -0.5502, 0, 0.5156, -0.557, 0.0825, 0.4668, -0.557, 0.0825, 0.4668, -0.6331, 0.165, 0.3866, -0.206, 0.165, 0.5804, -0.6331, 0.165, 0.3866, -0.557, 0.0825, 0.4668, -0.6722, 0.0825, 0.4146, -0.5502, 0, 0.5156, -0.1967, 0, 0.6759, -0.206, 0.165, 0.5804, -0.206, 0.165, 0.5804, -0.557, 0.0825, 0.4668, -0.5502, 0, 0.5156, -0.557, 0.0825, 0.4668, -0.206, 0.165, 0.5804, -0.6331, 0.165, 0.3866, -0.6331, 0.165, 0.3866, -0.6722, 0.0825, 0.4146, -0.557, 0.0825, 0.4668, -0.5677, 0.0825, 0.4854, -0.6722, 0.0825, 0.4146, -0.557, 0.0825, 0.4668, -0.6722, 0.0825, 0.4146, -0.5677, 0.0825, 0.4854, -0.6619, 0.0825, 0.4854, -0.6722, 0.0825, 0.4146, -0.6619, 0.0825, 0.4854, -0.7091, 0.0825, 0.4037, -0.6722, 0.0825, 0.4146, -0.7091, 0.0825, 0.4037, -0.6784, 0.0825, 0.3506, -0.2125, 0.0825, -0.3602, -0.2282, 0.0825, -0.4962, -0.1811, 0.0825, -0.4146, -0.2282, 0.0825, -0.4962, -0.2125, 0.0825, -0.3602, -0.3022, 0.0825, -0.4009, -0.2282, 0.0825, -0.4962, -0.3022, 0.0825, -0.4009, -0.3225, 0.0825, -0.4962, -0.3225, 0.0825, -0.4962, -0.3022, 0.0825, -0.4009, -0.3443, 0.0825, -0.3707, -0.3225, 0.0825, -0.4962, -0.3443, 0.0825, -0.3707, -0.3696, 0.0825, -0.4146, -0.4473, 0.0825, -0.297, -0.4351, 0, -0.4196, -0.4095, 0, -0.3752, -0.4351, 0, -0.4196, -0.4473, 0.0825, -0.297, -0.4767, 0.0825, -0.3477, -0.6784, 0.0825, 0.3506, -0.7192, 0, 0.3609, -0.7437, 0, 0.1111, -0.7437, 0, 0.1111, -0.6331, 0.165, 0.3866, -0.6784, 0.0825, 0.3506, -0.6784, 0.0825, 0.3506, -0.6331, 0.165, 0.3866, -0.6722, 0.0825, 0.4146, -0.7103, 0.0825, 0.0251, -0.6331, 0.165, 0.3866, -0.7437, 0, 0.1111, -0.7103, 0.0825, 0.0251, -0.6789, 0.165, -0.0801, -0.6331, 0.165, 0.3866, -0.6789, 0.165, -0.0801, -0.7103, 0.0825, 0.0251, -0.7226, 0.0825, -0.0999, -0.6784, 0.0825, 0.3506, -0.7437, 0, 0.1111, -0.7192, 0, 0.3609, -0.7437, 0, 0.1111, -0.6784, 0.0825, 0.3506, -0.6331, 0.165, 0.3866, -0.6784, 0.0825, 0.3506, -0.6722, 0.0825, 0.4146, -0.6331, 0.165, 0.3866, -0.7103, 0.0825, 0.0251, -0.7437, 0, 0.1111, -0.6331, 0.165, 0.3866, -0.7103, 0.0825, 0.0251, -0.6331, 0.165, 0.3866, -0.6789, 0.165, -0.0801, -0.6789, 0.165, -0.0801, -0.7226, 0.0825, -0.0999, -0.7103, 0.0825, 0.0251, -0.7226, 0.0825, -0.0999, -0.4767, 0.0825, -0.3477, -0.4473, 0.0825, -0.297, -0.4767, 0.0825, -0.3477, -0.7226, 0.0825, -0.0999, -0.7011, 0.0825, -0.3477, -0.7011, 0.0825, -0.3477, -0.7226, 0.0825, -0.0999, -0.8134, 0.0825, -0.1533, -0.7103, 0.0825, 0.0251, -0.8134, 0.0825, -0.1533, -0.7226, 0.0825, -0.0999, 0.7875, 0, 0.4264, 0.8347, 0.0825, 0.2489, 0.89, 0, 0.2489, 0.8347, 0.0825, 0.2489, 0.7875, 0, 0.4264, 0.7598, 0.0825, 0.3785, 0.5583, 0.0825, -0.3251, 0.3171, 0.165, -0.4163, 0.3171, 0.0825, -0.4644, 0.5583, 0.0825, -0.3251, 0.7232, 0.165, -0.1819, 0.3171, 0.165, -0.4163, 0.5583, 0.0825, -0.3251, 0.8064, 0, -0.2299, 0.7232, 0.165, -0.1819, 0.8064, 0, -0.2299, 0.5583, 0.0825, -0.3251, 0.6414, 0, -0.3252, 0.5583, 0.0825, -0.3251, 0.3171, 0.0825, -0.4644, 0.3171, 0.165, -0.4163, 0.5583, 0.0825, -0.3251, 0.3171, 0.165, -0.4163, 0.7232, 0.165, -0.1819, 0.5583, 0.0825, -0.3251, 0.7232, 0.165, -0.1819, 0.8064, 0, -0.2299, 0.8064, 0, -0.2299, 0.6414, 0, -0.3252, 0.5583, 0.0825, -0.3251, 0.8064, 0, 0.1041, 0.7232, 0.165, -0.1819, 0.8064, 0, -0.2299, 0.7232, 0.165, -0.1819, 0.8064, 0, 0.1041, 0.7648, 0.0825, 0.1279, 0.7232, 0.165, -0.1819, 0.7648, 0.0825, 0.1279, 0.7232, 0.165, 0.2871, 0.7232, 0.165, 0.2871, 0.7648, 0.0825, 0.1279, 0.7648, 0.0825, 0.3111, 0.8064, 0, 0.1041, 0.8064, 0, -0.2299, 0.7232, 0.165, -0.1819, 0.7232, 0.165, -0.1819, 0.7648, 0.0825, 0.1279, 0.8064, 0, 0.1041, 0.7232, 0.165, -0.1819, 0.7232, 0.165, 0.2871, 0.7648, 0.0825, 0.1279, 0.7232, 0.165, 0.2871, 0.7648, 0.0825, 0.3111, 0.7648, 0.0825, 0.1279, -0.3225, 0.0825, -0.4962, -0.4045, 0, -0.4146, -0.3399, 0, -0.5264, -0.4045, 0, -0.4146, -0.3225, 0.0825, -0.4962, -0.3696, 0.0825, -0.4146, 0.1951, 0.0825, -0.4737, 0.2659, 0, -0.74, 0.3074, 0.0825, -0.6681, 0.2659, 0, -0.74, 0.1951, 0.0825, -0.4737, 0.1121, 0, -0.4737, 0.6483, 0, 0.4264, 0.7598, 0.0825, 0.3785, 0.7875, 0, 0.4264, 0.7598, 0.0825, 0.3785, 0.6483, 0, 0.4264, 0.6481, 0.0825, 0.3785, -0.2125, 0.0825, -0.3602, -0.2976, 0.165, -0.3531, -0.3022, 0.0825, -0.4009, -0.2125, 0.0825, -0.3602, -0.0147, 0.165, -0.2248, -0.2976, 0.165, -0.3531, -0.2125, 0.0825, -0.3602, -0.0193, 0, -0.3182, -0.0147, 0.165, -0.2248, -0.0193, 0, -0.3182, -0.2125, 0.0825, -0.3602, -0.164, 0, -0.3838, -0.2125, 0.0825, -0.3602, -0.3022, 0.0825, -0.4009, -0.2976, 0.165, -0.3531, -0.2125, 0.0825, -0.3602, -0.2976, 0.165, -0.3531, -0.0147, 0.165, -0.2248, -0.2125, 0.0825, -0.3602, -0.0147, 0.165, -0.2248, -0.0193, 0, -0.3182, -0.0193, 0, -0.3182, -0.164, 0, -0.3838, -0.2125, 0.0825, -0.3602, 0.3947, 0.0825, 0.6599, 0.4484, 0.0825, 0.4938, 0.4695, 0.0825, 0.5303, 0.4484, 0.0825, 0.4938, 0.3947, 0.0825, 0.6599, 0.3171, 0.0825, 0.5696, 0.3171, 0.0825, 0.5696, 0.3947, 0.0825, 0.6599, 0.245, 0.0825, 0.6599, 0.3171, 0.0825, 0.5696, 0.245, 0.0825, 0.6599, 0.1899, 0.0825, 0.4961, 0.1899, 0.0825, 0.4961, 0.245, 0.0825, 0.6599, 0.1702, 0.0825, 0.5303, 0.1466, 0, -0.414, 0.1951, 0.0825, -0.4737, 0.2297, 0.0825, -0.4139, 0.1951, 0.0825, -0.4737, 0.1466, 0, -0.414, 0.1121, 0, -0.4737, 0.5107, 0, 0.5058, 0.4223, 0, 0.7078, 0.5248, 0, 0.5303, 0.5107, 0, 0.5058, 0.2659, 0, -0.74, 0.4223, 0, 0.7078, 0.4223, 0, 0.7078, 0.2659, 0, -0.74, 0.2173, 0, 0.7078, 0.5107, 0, 0.5058, 0.5734, 0, -0.74, 0.2659, 0, -0.74, 0.5107, 0, 0.5058, 0.6414, 0, -0.3252, 0.5734, 0, -0.74, 0.7271, 0, -0.4737, 0.5734, 0, -0.74, 0.6414, 0, -0.3252, 0.6483, 0, 0.4264, 0.6414, 0, -0.3252, 0.5107, 0, 0.5058, 0.7875, 0, 0.4264, 0.6414, 0, -0.3252, 0.6483, 0, 0.4264, 0.7875, 0, 0.4264, 0.8064, 0, -0.2299, 0.6414, 0, -0.3252, 0.7875, 0, 0.4264, 0.8064, 0, 0.1041, 0.8064, 0, -0.2299, 0.8064, 0, 0.1041, 0.7875, 0, 0.4264, 0.89, 0, 0.2489, 0.2173, 0, 0.7078, 0.2659, 0, -0.74, 0.1466, 0, -0.414, 0.1466, 0, -0.414, 0.2659, 0, -0.74, 0.1121, 0, -0.4737, 0.1276, 0, 0.5082, 0.2173, 0, 0.7078, 0.1466, 0, -0.414, 0.2173, 0, 0.7078, 0.1276, 0, 0.5082, 0.1148, 0, 0.5303, -0.0193, 0, -0.3182, 0.1276, 0, 0.5082, 0.1466, 0, -0.414, 0.1276, 0, 0.5082, -0.0193, 0, -0.3182, 0.0778, 0, 0.4794, 0.0778, 0, 0.4794, -0.0193, 0, -0.3182, -0.1967, 0, 0.6759, -0.1967, 0, 0.6759, -0.0193, 0, -0.3182, -0.164, 0, -0.3838, -0.164, 0, -0.3838, -0.2108, 0, -0.5264, -0.1967, 0, 0.6759, -0.2108, 0, -0.5264, -0.164, 0, -0.3838, -0.1462, 0, -0.4146, -0.1967, 0, 0.6759, -0.2108, 0, -0.5264, -0.5502, 0, 0.5156, -0.5502, 0, 0.5156, -0.2108, 0, -0.5264, -0.3399, 0, -0.5264, -0.5502, 0, 0.5156, -0.3399, 0, -0.5264, -0.3899, 0, -0.3893, -0.3399, 0, -0.5264, -0.4045, 0, -0.4146, -0.3899, 0, -0.3893, -0.5502, 0, 0.5156, -0.3899, 0, -0.3893, -0.4095, 0, -0.3752, -0.5502, 0, 0.5156, -0.4095, 0, -0.3752, -0.4351, 0, -0.4196, -0.5502, 0, 0.5156, -0.4351, 0, -0.4196, -0.7426, 0, -0.4196, -0.5502, 0, 0.5156, -0.7426, 0, -0.4196, -0.6794, 0, 0.5156, -0.6794, 0, 0.5156, -0.7426, 0, -0.4196, -0.7192, 0, 0.3609, -0.7192, 0, 0.3609, -0.7439, 0, 0.4037, -0.6794, 0, 0.5156, -0.7192, 0, 0.3609, -0.7426, 0, -0.4196, -0.7437, 0, 0.1111, -0.7437, 0, 0.1111, -0.7426, 0, -0.4196, -0.8964, 0, -0.1533, 0.6481, 0.0825, 0.3785, 0.7232, 0.165, 0.2871, 0.7648, 0.0825, 0.3111, 0.7232, 0.165, 0.2871, 0.6481, 0.0825, 0.3785, 0.4484, 0.0825, 0.4938, 0.4484, 0.0825, 0.4938, 0.3171, 0.165, 0.5216, 0.7232, 0.165, 0.2871, 0.3171, 0.165, 0.5216, 0.4484, 0.0825, 0.4938, 0.3171, 0.0825, 0.5696, 0.6481, 0.0825, 0.3785, 0.5107, 0, 0.5058, 0.4484, 0.0825, 0.4938, 0.5107, 0, 0.5058, 0.6481, 0.0825, 0.3785, 0.6483, 0, 0.4264, 0.6481, 0.0825, 0.3785, 0.7648, 0.0825, 0.3111, 0.7232, 0.165, 0.2871, 0.7232, 0.165, 0.2871, 0.4484, 0.0825, 0.4938, 0.6481, 0.0825, 0.3785, 0.4484, 0.0825, 0.4938, 0.7232, 0.165, 0.2871, 0.3171, 0.165, 0.5216, 0.3171, 0.165, 0.5216, 0.3171, 0.0825, 0.5696, 0.4484, 0.0825, 0.4938, 0.6481, 0.0825, 0.3785, 0.4484, 0.0825, 0.4938, 0.5107, 0, 0.5058, 0.5107, 0, 0.5058, 0.6483, 0, 0.4264, 0.6481, 0.0825, 0.3785, 0.3171, 0.165, 0.5216, 0.7232, 0.165, -0.1819, 0.7232, 0.165, 0.2871, 0.7232, 0.165, -0.1819, 0.3171, 0.165, 0.5216, 0.3171, 0.165, -0.4163, 0.3171, 0.165, -0.4163, 0.3171, 0.165, 0.5216, 0.073, 0.165, 0.3806, 0.3171, 0.165, -0.4163, 0.073, 0.165, 0.3806, -0.0147, 0.165, -0.2248, -0.0147, 0.165, -0.2248, 0.073, 0.165, 0.3806, -0.206, 0.165, 0.5804, -0.0147, 0.165, -0.2248, -0.206, 0.165, 0.5804, -0.2976, 0.165, -0.3531, -0.2976, 0.165, -0.3531, -0.206, 0.165, 0.5804, -0.6331, 0.165, 0.3866, -0.2976, 0.165, -0.3531, -0.6331, 0.165, 0.3866, -0.6789, 0.165, -0.0801, 0.3171, 0.165, 0.5216, 0.7232, 0.165, 0.2871, 0.7232, 0.165, -0.1819, 0.7232, 0.165, -0.1819, 0.3171, 0.165, -0.4163, 0.3171, 0.165, 0.5216, 0.3171, 0.165, -0.4163, 0.073, 0.165, 0.3806, 0.3171, 0.165, 0.5216, 0.3171, 0.165, -0.4163, -0.0147, 0.165, -0.2248, 0.073, 0.165, 0.3806, -0.0147, 0.165, -0.2248, -0.206, 0.165, 0.5804, 0.073, 0.165, 0.3806, -0.0147, 0.165, -0.2248, -0.2976, 0.165, -0.3531, -0.206, 0.165, 0.5804, -0.2976, 0.165, -0.3531, -0.6331, 0.165, 0.3866, -0.206, 0.165, 0.5804, -0.2976, 0.165, -0.3531, -0.6789, 0.165, -0.0801, -0.6331, 0.165, 0.3866, -0.7437, 0, 0.1111, -0.8134, 0.0825, -0.1533, -0.7103, 0.0825, 0.0251, -0.8134, 0.0825, -0.1533, -0.7437, 0, 0.1111, -0.8964, 0, -0.1533, 0.4223, 0, 0.7078, 0.4695, 0.0825, 0.5303, 0.5248, 0, 0.5303, 0.4695, 0.0825, 0.5303, 0.4223, 0, 0.7078, 0.3947, 0.0825, 0.6599, 0.5734, 0, -0.74, 0.3074, 0.0825, -0.6681, 0.2659, 0, -0.74, 0.3074, 0.0825, -0.6681, 0.5734, 0, -0.74, 0.5319, 0.0825, -0.6681, 0.245, 0.0825, 0.6599, 0.1148, 0, 0.5303, 0.1702, 0.0825, 0.5303, 0.1148, 0, 0.5303, 0.245, 0.0825, 0.6599, 0.2173, 0, 0.7078, -0.164, 0, -0.3838, -0.1811, 0.0825, -0.4146, -0.1462, 0, -0.4146, -0.1811, 0.0825, -0.4146, -0.164, 0, -0.3838, -0.2125, 0.0825, -0.3602, 0.2173, 0, 0.7078, 0.3947, 0.0825, 0.6599, 0.4223, 0, 0.7078, 0.3947, 0.0825, 0.6599, 0.2173, 0, 0.7078, 0.245, 0.0825, 0.6599, 0.1702, 0.0825, 0.5303, 0.1276, 0, 0.5082, 0.1899, 0.0825, 0.4961, 0.1276, 0, 0.5082, 0.1702, 0.0825, 0.5303, 0.1148, 0, 0.5303, 0.5107, 0, 0.5058, 0.4695, 0.0825, 0.5303, 0.4484, 0.0825, 0.4938, 0.4695, 0.0825, 0.5303, 0.5107, 0, 0.5058, 0.5248, 0, 0.5303, -0.1967, 0, 0.6759, 0.073, 0.165, 0.3806, 0.0778, 0, 0.4794, 0.073, 0.165, 0.3806, -0.1967, 0, 0.6759, -0.206, 0.165, 0.5804, -0.1967, 0, 0.6759, 0.0778, 0, 0.4794, 0.073, 0.165, 0.3806, 0.073, 0.165, 0.3806, -0.206, 0.165, 0.5804, -0.1967, 0, 0.6759 )
@@ -21,30 +28,10 @@ data = PoolVector3Array( -0.557, 0.0825, 0.4668, -0.5502, 0, 0.5156, -0.5677, 0.
 [sub_resource type="ConvexPolygonShape" id=2]
 points = PoolVector3Array( 0.265741, 0, -0.74, 0.307359, 0.0825, -0.668146, 0.573324, 0, -0.74, -0.74269, 0, -0.419707, -0.322496, 0.0825, -0.496237, 0.316976, 0.165, -0.416447, 0.531707, 0.0825, -0.668146, -0.297665, 0.165, -0.353097, 0.643969, 0.0825, -0.473703, 0.727028, 0, -0.473703, -0.896394, 0, -0.15341, -0.813509, 0.0825, -0.15341, -0.701248, 0.0825, -0.347853, 0.723181, 0.165, -0.181896, -0.678865, 0.165, -0.080139, 0.806416, 0, -0.22994, -0.744089, 0, 0.403702, -0.709117, 0.0825, 0.403702, -0.633226, 0.165, 0.386554, 0.723181, 0.165, 0.287064, 0.834569, 0.0825, 0.248799, 0.89, 0, 0.248799, -0.67939, 0, 0.515521, -0.662079, 0.0825, 0.485335, -0.206037, 0.165, 0.580289, 0.759728, 0.0825, 0.378334, 0.316976, 0.165, 0.521474, 0.394615, 0.0825, 0.659795, 0.787356, 0, 0.426378, -0.19677, 0, 0.67581, 0.217304, 0, 0.707839, 0.244933, 0.0825, 0.659795, 0.422243, 0, 0.707839 )
 
-[sub_resource type="BoxShape" id=3]
-extents = Vector3( 0.245434, 0.0407216, 0.243794 )
-
-[sub_resource type="ConvexPolygonShape" id=7]
-points = PoolVector3Array( -0.25, 0, 0.207219, -0.184906, 0.0592635, 0.196985, 0.00528583, 0.0499941, 0.196985, 0.25, 0, 0.207219, -0.25, 0, 0.25, -0.244665, 0.517467, 0.212564, -0.195135, 0.452378, 0.196985, 0.0568716, 0.0499941, 0.196985, 0.25, 0, 0.25, 0.18706, 0.0599727, 0.196985, 0.18706, 0.453239, 0.196985, 0.244616, 0.517467, 0.212564, -0.244665, 0.517467, 0.24465, -0.120155, 0.483884, 0.196985, 0.244616, 0.517467, 0.24465, 0.126126, 0.472538, 0.196985, -0.06852, 0.482415, 0.196985 )
-
-[sub_resource type="CylinderShape" id=5]
-height = 2.83018
-radius = 0.0471388
-
-[sub_resource type="CylinderShape" id=6]
-height = 3.4275
-radius = 0.0621484
-
 [sub_resource type="BoxShape" id=4]
 extents = Vector3( 0.969611, 2.68209, 5.01052 )
 
 [node name="Landscape" type="Spatial"]
-
-[node name="OmniLight" type="OmniLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.971202, 2.03549, -2.2825 )
-shadow_enabled = true
-shadow_bias = 0.0
-omni_range = 8.36093
 
 [node name="MedioAmbiente" parent="." instance=ExtResource( 1 )]
 
@@ -55,18 +42,13 @@ default_texels_per_unit = 32.0
 environment_mode = 1
 light_data = ExtResource( 5 )
 
-[node name="RockyLandscape" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.26144, 0, -2.83874 )
-__meta__ = {
-"_edit_lock_": true
-}
+[node name="RockyLandscape" type="Node" parent="."]
 
 [node name="RockFloor01" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( 10, 0, 0, 0, 4, 0, 0, 0, 10, 2.05749, 0.169154, 7.49908 )
+transform = Transform( 10, 0, 0, 0, 4, 0, 0, 0, 10, 0.844615, 0.169154, 4.60592 )
 use_in_baked_light = true
-lightmap_scale = 1
+lightmap_scale = 2
 mesh = ExtResource( 7 )
-skeleton = NodePath("../..")
 __meta__ = {
 "_edit_lock_": true
 }
@@ -79,11 +61,10 @@ collision_mask = 0
 shape = SubResource( 1 )
 
 [node name="GrassFloor01" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0.233645 )
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -1.21288, 0, -2.65951 )
 use_in_baked_light = true
-lightmap_scale = 1
+lightmap_scale = 2
 mesh = ExtResource( 4 )
-skeleton = NodePath("")
 __meta__ = {
 "_edit_lock_": true
 }
@@ -96,7 +77,7 @@ collision_mask = 0
 shape = SubResource( 2 )
 
 [node name="Mountain01" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( 4.92765, 0, 0.847522, 0, 5, 0, -0.847522, 0, 4.92765, 0.801297, 0.15494, -3.3604 )
+transform = Transform( 4.92765, 0, 0.847522, 0, 5, 0, -0.847522, 0, 4.92765, -0.411578, 0.15494, -6.25356 )
 use_in_baked_light = true
 mesh = ExtResource( 2 )
 skeleton = NodePath("../..")
@@ -112,7 +93,7 @@ collision_mask = 0
 shape = ExtResource( 10 )
 
 [node name="Mountain02" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( -0.994531, 0, 4.90009, 0, 5, 0, -4.90009, 0, -0.994531, -2.99762, 0.161971, -3.50968 )
+transform = Transform( -0.994531, 0, 4.90009, 0, 5, 0, -4.90009, 0, -0.994531, -4.21049, 0.161971, -6.40284 )
 use_in_baked_light = true
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
@@ -128,7 +109,7 @@ collision_mask = 0
 shape = ExtResource( 11 )
 
 [node name="Mountain03" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( 4.43045, 0, -2.31756, 0, 5, 0, 2.31756, 0, 4.43045, -1.28874, 0.161971, -3.50968 )
+transform = Transform( 4.43045, 0, -2.31756, 0, 5, 0, 2.31756, 0, 4.43045, -2.50162, 0.161971, -6.40284 )
 use_in_baked_light = true
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
@@ -144,7 +125,7 @@ collision_mask = 0
 shape = ExtResource( 11 )
 
 [node name="Mountain04" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( -3.54367, 0, -3.52738, 0, 5, 0, 3.52738, 0, -3.54367, -4.35158, 0.191089, -2.69101 )
+transform = Transform( -3.54367, 0, -3.52738, 0, 5, 0, 3.52738, 0, -3.54367, -5.56446, 0.191089, -5.58417 )
 use_in_baked_light = true
 mesh = ExtResource( 2 )
 skeleton = NodePath("../..")
@@ -160,7 +141,7 @@ collision_mask = 0
 shape = ExtResource( 10 )
 
 [node name="Mountain05" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( 3.98541, 0, -9.1715, 0, 10, 0, 9.1715, 0, 3.98541, -5.19067, 0.280204, 7.927 )
+transform = Transform( 3.98541, 0, -9.1715, 0, 10, 0, 9.1715, 0, 3.98541, -6.40355, 0.280204, 5.03384 )
 use_in_baked_light = true
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
@@ -176,7 +157,7 @@ collision_mask = 0
 shape = ExtResource( 11 )
 
 [node name="Mountain06" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( 9.50662, 0, -3.10228, 0, 10, 0, 3.10228, 0, 9.50662, -2.78166, 0.689656, 12.0028 )
+transform = Transform( 9.50662, 0, -3.10228, 0, 10, 0, 3.10228, 0, 9.50662, -3.99454, 0.689656, 9.10964 )
 use_in_baked_light = true
 mesh = ExtResource( 2 )
 skeleton = NodePath("../..")
@@ -192,7 +173,7 @@ collision_mask = 0
 shape = ExtResource( 10 )
 
 [node name="Mountain07" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( 11.6213, 0, -2.99077, 0, 10, 0, 2.99077, 0, 11.6213, 3.24363, 0.844241, 12.8293 )
+transform = Transform( 11.6213, 0, -2.99077, 0, 10, 0, 2.99077, 0, 11.6213, 2.03075, 0.844241, 9.93614 )
 use_in_baked_light = true
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
@@ -208,7 +189,7 @@ collision_mask = 0
 shape = ExtResource( 11 )
 
 [node name="Mountain08" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( -7.96994, 0, -6.03988, 0, 10, 0, 6.03988, 0, -7.96994, 8.23364, 0.848536, 13.2573 )
+transform = Transform( -7.96994, 0, -6.03988, 0, 10, 0, 6.03988, 0, -7.96994, 7.02076, 0.848536, 10.3641 )
 use_in_baked_light = true
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
@@ -224,7 +205,7 @@ collision_mask = 0
 shape = ExtResource( 11 )
 
 [node name="Mountain09" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( -0.506104, 0, 9.98718, 0, 10, 0, -9.98718, 0, -0.506104, 8.93581, 0.385444, 8.54363 )
+transform = Transform( -0.506104, 0, 9.98718, 0, 10, 0, -9.98718, 0, -0.506104, 7.72293, 0.385444, 5.65047 )
 use_in_baked_light = true
 mesh = ExtResource( 2 )
 skeleton = NodePath("../..")
@@ -240,7 +221,7 @@ collision_mask = 0
 shape = ExtResource( 10 )
 
 [node name="Mountain10" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( 0.535732, 0, 9.98564, 0, 10, 0, -9.98564, 0, 0.535732, 8.35974, 0.491458, 3.03709 )
+transform = Transform( 0.535732, 0, 9.98564, 0, 10, 0, -9.98564, 0, 0.535732, 7.14686, 0.491458, 0.143931 )
 use_in_baked_light = true
 mesh = ExtResource( 6 )
 skeleton = NodePath("../..")
@@ -256,7 +237,7 @@ collision_mask = 0
 shape = ExtResource( 11 )
 
 [node name="Mountain11" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( -5.39227, 0, 8.42161, 0, 10, 0, -8.42161, 0, -5.39227, 7.59994, 0.0310369, -1.43436 )
+transform = Transform( -5.39227, 0, 8.42161, 0, 10, 0, -8.42161, 0, -5.39227, 6.38706, 0.0310369, -4.32752 )
 use_in_baked_light = true
 mesh = ExtResource( 2 )
 skeleton = NodePath("../..")
@@ -272,7 +253,7 @@ collision_mask = 0
 shape = ExtResource( 10 )
 
 [node name="Mountain12" type="MeshInstance" parent="RockyLandscape"]
-transform = Transform( -7.19631, 0, -6.94357, 0, 10, 0, 6.94357, 0, -7.19631, -6.39884, 0.157628, 2.18772 )
+transform = Transform( -7.19631, 0, -6.94357, 0, 10, 0, 6.94357, 0, -7.19631, -7.61172, 0.157628, -0.705439 )
 use_in_baked_light = true
 mesh = ExtResource( 9 )
 skeleton = NodePath("../..")
@@ -287,411 +268,320 @@ collision_mask = 0
 [node name="CollisionShape" type="CollisionShape" parent="RockyLandscape/Mountain12/StaticBody"]
 shape = ExtResource( 8 )
 
-[node name="Statics" type="Spatial" parent="."]
+[node name="Statics" type="Node" parent="."]
+
+[node name="Palet01" parent="Statics" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.166594, 0 )
+
+[node name="Palet02" parent="Statics" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.509188, 0.166594, 0 )
+
+[node name="Fence01" parent="Statics" instance=ExtResource( 14 )]
+transform = Transform( 0.996927, 0, -0.0783373, 0, 1, 0, 0.0783373, 0, 0.996927, 3.53506, 0.23015, -6.08215 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Palet01" type="MeshInstance" parent="Statics"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.482995, 0.165187, -0.0552369 )
-mesh = ExtResource( 3 )
-skeleton = NodePath("../../BakedLightmap")
+[node name="Fence02" parent="Statics" instance=ExtResource( 14 )]
+transform = Transform( 0.996927, 0, -0.0783373, 0, 1, 0, 0.0783373, 0, 0.996927, 3.04678, 0.23015, -6.12052 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="StaticBody" type="StaticBody" parent="Statics/Palet01"]
-
-[node name="CollisionShape" type="CollisionShape" parent="Statics/Palet01/StaticBody"]
-shape = SubResource( 3 )
-
-[node name="Fence01" type="MeshInstance" parent="Statics"]
-transform = Transform( 0.973936, 0, -0.226821, 0, 1, 0, 0.226821, 0, 0.973936, 3.43309, 0.166298, -5.88827 )
-mesh = ExtResource( 14 )
-
-[node name="StaticBody" type="StaticBody" parent="Statics/Fence01"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Statics/Fence01/StaticBody"]
-shape = SubResource( 7 )
-
-[node name="Fence02" type="MeshInstance" parent="Statics"]
-transform = Transform( 0.973936, 0, -0.226821, 0, 1, 0, 0.226821, 0, 0.973936, 2.9495, 0.166298, -6.00254 )
-mesh = ExtResource( 14 )
-
-[node name="StaticBody" type="StaticBody" parent="Statics/Fence02"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Statics/Fence02/StaticBody"]
-shape = SubResource( 7 )
-
-[node name="Fence03" type="MeshInstance" parent="Statics"]
-transform = Transform( 0.973936, 0, -0.226821, 0, 1, 0, 0.226821, 0, 0.973936, 2.46831, 0.166298, -6.11554 )
-mesh = ExtResource( 14 )
-
-[node name="StaticBody" type="StaticBody" parent="Statics/Fence03"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Statics/Fence03/StaticBody"]
-shape = SubResource( 7 )
-
-[node name="Fence04" type="MeshInstance" parent="Statics"]
-transform = Transform( 0.973936, 0, -0.226821, 0, 1, 0, 0.226821, 0, 0.973936, 1.98875, 0.166298, -6.22631 )
-mesh = ExtResource( 14 )
-
-[node name="StaticBody" type="StaticBody" parent="Statics/Fence04"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Statics/Fence04/StaticBody"]
-shape = SubResource( 7 )
-
-[node name="Fence05" type="MeshInstance" parent="Statics"]
-transform = Transform( 0.973936, 0, -0.226821, 0, 1, 0, 0.226821, 0, 0.973936, 1.50771, 0.166298, -6.33903 )
-mesh = ExtResource( 14 )
-
-[node name="StaticBody" type="StaticBody" parent="Statics/Fence05"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Statics/Fence05/StaticBody"]
-shape = SubResource( 7 )
-
-[node name="Trees" type="Spatial" parent="."]
+[node name="Fence03" parent="Statics" instance=ExtResource( 14 )]
+transform = Transform( 0.996927, 0, -0.0783373, 0, 1, 0, 0.0783373, 0, 0.996927, 2.55372, 0.23015, -6.15926 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Tree01" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36206, 0.162864, -4.52423 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree01"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree01/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree02" type="MeshInstance" parent="Trees"]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 2.09537, 0.829154, 7.73295 )
-mesh = ExtResource( 13 )
-skeleton = NodePath("")
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree02"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00670208, 2.38419e-07, -0.000108242 )
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree02/StaticBody"]
-shape = SubResource( 6 )
-
-[node name="Tree03" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09432, 0.162864, -3.05942 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree03"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree03/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree04" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.10579, 0.158087, -5.53255 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree04"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree04/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree05" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46155, 0.158087, 0.257789 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree05"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree05/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree06" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.59419, 0.158087, -1.99452 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree06"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree06/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree07" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.755058, 0.158087, -4.7488 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree07"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree07/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree08" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.46009, 0.141763, -0.488898 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree08"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree08/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree09" type="MeshInstance" parent="Trees"]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 5.28316, 0.829154, 2.54291 )
-mesh = ExtResource( 13 )
-skeleton = NodePath("")
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree09"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00670208, 2.38419e-07, -0.000108242 )
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree09/StaticBody"]
-shape = SubResource( 6 )
-
-[node name="Tree10" type="MeshInstance" parent="Trees"]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 5.16468, 0.829153, 6.14408 )
-mesh = ExtResource( 13 )
-skeleton = NodePath("")
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree10"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00670208, 2.38419e-07, -0.000108242 )
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree10/StaticBody"]
-shape = SubResource( 6 )
-
-[node name="Tree11" type="MeshInstance" parent="Trees"]
-transform = Transform( 1.75, 0, 0, 0, 1.75, 0, 0, 0, 1.75, -3.67874, 0.829153, 2.74011 )
-mesh = ExtResource( 13 )
-skeleton = NodePath("")
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree11"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00670208, 2.38419e-07, -0.000108242 )
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree11/StaticBody"]
-shape = SubResource( 6 )
-
-[node name="Tree12" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.53948, 0.825611, 5.79784 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree12"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree12/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree13" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.23778, 0.825611, 6.2594 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree13"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree13/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree14" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.255553, 0.825611, 7.96695 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree14"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree14/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree15" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4419, 0.825611, 8.31136 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree15"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree15/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree16" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.56113, 0.825611, 3.88238 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree16"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree16/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree17" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.03016, 0.825611, 5.60424 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree17"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree17/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree18" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.08698, 0.825611, 7.02561 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree18"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree18/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree19" type="MeshInstance" parent="Trees"]
-transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 4.04744, 0.825611, 2.17732 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree19"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree19/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree20" type="MeshInstance" parent="Trees"]
-transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -4.01632, 0.146868, -3.63771 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree20"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree20/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree21" type="MeshInstance" parent="Trees"]
-transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -4.91541, 0.146868, -2.95347 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree21"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree21/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree22" type="MeshInstance" parent="Trees"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.41175, 0.825611, 6.84484 )
-mesh = ExtResource( 12 )
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree22"]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree22/StaticBody"]
-shape = SubResource( 5 )
-
-[node name="Tree23" type="MeshInstance" parent="Trees"]
-transform = Transform( 1.9, 0, 0, 0, 1.9, 0, 0, 0, 1.9, 3.17198, 0.829153, 4.46377 )
-mesh = ExtResource( 13 )
-skeleton = NodePath("")
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree23"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00670208, 2.38419e-07, -0.000108242 )
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree23/StaticBody"]
-shape = SubResource( 6 )
-
-[node name="Tree24" type="MeshInstance" parent="Trees"]
-transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 1.94409, 0.829153, 6.30062 )
-mesh = ExtResource( 13 )
-skeleton = NodePath("")
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree24"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00670208, 2.38419e-07, -0.000108242 )
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree24/StaticBody"]
-shape = SubResource( 6 )
-
-[node name="Tree25" type="MeshInstance" parent="Trees"]
-transform = Transform( 1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 1.05119, 0.829153, 4.78271 )
-mesh = ExtResource( 13 )
-skeleton = NodePath("")
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree25"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00670208, 2.38419e-07, -0.000108242 )
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree25/StaticBody"]
-shape = SubResource( 6 )
-
-[node name="Tree26" type="MeshInstance" parent="Trees"]
-transform = Transform( 1.9, 0, 0, 0, 1.9, 0, 0, 0, 1.9, -3.76081, 0.829153, 4.62689 )
-mesh = ExtResource( 13 )
-skeleton = NodePath("")
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree26"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00670208, 2.38419e-07, -0.000108242 )
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree26/StaticBody"]
-shape = SubResource( 6 )
-
-[node name="Tree27" type="MeshInstance" parent="Trees"]
-transform = Transform( 2.1, 0, 0, 0, 2.1, 0, 0, 0, 2.1, -2.42683, 0.829153, 3.3661 )
-mesh = ExtResource( 13 )
-skeleton = NodePath("")
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree27"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00670208, 2.38419e-07, -0.000108242 )
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree27/StaticBody"]
-shape = SubResource( 6 )
-
-[node name="Tree28" type="MeshInstance" parent="Trees"]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1.7266, 0.829153, 5.69957 )
-mesh = ExtResource( 13 )
-skeleton = NodePath("")
-
-[node name="StaticBody" type="StaticBody" parent="Trees/Tree28"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00670208, 2.38419e-07, -0.000108242 )
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape" type="CollisionShape" parent="Trees/Tree28/StaticBody"]
-shape = SubResource( 6 )
+[node name="Fence04" parent="Statics" instance=ExtResource( 14 )]
+transform = Transform( 0.996927, 0, -0.0783373, 0, 1, 0, 0.0783373, 0, 0.996927, 2.06489, 0.23015, -6.19767 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fence05" parent="Statics" instance=ExtResource( 14 )]
+transform = Transform( 0.996927, 0, -0.0783373, 0, 1, 0, 0.0783373, 0, 0.996927, 1.57746, 0.23015, -6.23597 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Fence06" parent="Statics" instance=ExtResource( 14 )]
+transform = Transform( 0.996927, 0, -0.0783373, 0, 1, 0, 0.0783373, 0, 0.996927, 1.08705, 0.23015, -6.27451 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Grass" type="Node" parent="Statics"]
+
+[node name="Grass01" parent="Statics/Grass" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.456273, 0.16182, -1.95388 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Grass02" parent="Statics/Grass" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0897453, 0.16182, -3.2632 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Grass03" parent="Statics/Grass" instance=ExtResource( 15 )]
+transform = Transform( 0.37506, 0, 0.927001, 0, 1, 0, -0.927001, 0, 0.37506, -2.62815, 0.163763, -1.95898 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Grass04" parent="Statics/Grass" instance=ExtResource( 15 )]
+transform = Transform( 0.37506, 0, 0.927001, 0, 1, 0, -0.927001, 0, 0.37506, -2.00173, 0.163763, -3.61131 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Grass05" parent="Statics/Grass" instance=ExtResource( 15 )]
+transform = Transform( 0.999034, 0, 0.0439507, 0, 1, 0, -0.0439507, 0, 0.999034, -1.65655, 0.163763, -3.59325 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Grass06" parent="Statics/Grass" instance=ExtResource( 15 )]
+transform = Transform( 0.416551, 0, -0.909113, 0, 1, 0, 0.909113, 0, 0.416551, -1.83216, 0.163763, -3.71501 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Trees" type="Node" parent="Statics"]
+
+[node name="Tree01" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.669537, 0.163, -3.80123 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree02" parent="Statics/Trees" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55484, 0.163, -1.90292 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree03" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, -1.03603, 0.163, -3.0185 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree04" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.21146, 0.163, -2.21328 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree05" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -2.8095, 0.163, -3.51928 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree06" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, -3.58396, 0.163, -2.90333 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree07" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9095, 0.163, -1.37311 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree08" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, -3.73621, 0.163, -1.88683 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree09" parent="Statics/Trees" instance=ExtResource( 13 )]
+transform = Transform( 0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, 3.77198, 0.823, 1.99856 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree10" parent="Statics/Trees" instance=ExtResource( 13 )]
+transform = Transform( 1.05, 0, 0, 0, 1.05, 0, 0, 0, 1.05, -0.285323, 0.823, 3.32359 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree11" parent="Statics/Trees" instance=ExtResource( 13 )]
+transform = Transform( 0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, -2.33357, 0.163, -4.35074 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree12" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0.844225, 0.163, -2.8557 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree13" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, 0.0557491, 0.163, -2.47521 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree14" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1.05, 0, 0, 0, 1.05, 0, 0, 0, 1.05, 2.13236, 0.163, -0.90097 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree15" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9746, 0.163, 0.289038 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree16" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, 1.42734, 0.163, 0.647312 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree17" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 2, 0, 0, 0, 1.1, 0, 0, 0, 2, -0.415878, 0.163, 0.742005 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree18" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 0.8, 0, 0, 0, 0.75, 0, 0, 0, 0.8, -2.30468, 0.163, -2.77382 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree19" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1.2, 0, 0, 0, 1.1, 0, 0, 0, 1.2, -0.970009, 0.163, -1.48003 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree20" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 3.05856, 0.762561, 2.23177 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree34" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, -1.36619, 0.163, -0.816796 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree35" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1.1, 0, 0, 0, 1, 0, 0, 0, 1.1, 0.572489, 0.163, -4.49846 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree21" parent="Statics/Trees" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.76674, 0.823, 2.69091 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree22" parent="Statics/Trees" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.851532, 0.823483, 2.74103 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree23" parent="Statics/Trees" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91566, 0.163, -0.678851 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree24" parent="Statics/Trees" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.26754, 0.823, 2.63623 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree25" parent="Statics/Trees" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.04928, 0.823, 2.51735 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree26" parent="Statics/Trees" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.75179, 0.823, 3.44033 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree29" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.31856, 0.823, 3.20791 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree30" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.554, 0.823, 3.65 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree31" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90045, 0.163, -4.12888 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree32" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.19202, 0.163, -3.93798 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Tree33" parent="Statics/Trees" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.78671, 0.163, -3.20477 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CampFire" parent="Statics" instance=ExtResource( 16 )]
+transform = Transform( 0.510003, 0, 0.860173, 0, 1, 0, -0.860173, 0, 0.510003, 1.25188, 0.164323, -0.512615 )
+
+[node name="Ramp01" parent="Statics" instance=ExtResource( 17 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.00146149, -0.250551, -0.494066 )
+
+[node name="Ramp02" parent="Statics" instance=ExtResource( 17 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.00146149, -0.0351867, -0.992511 )
+
+[node name="Ramp03" parent="Statics" instance=ExtResource( 17 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.00146149, -0.0351867, -0.992511 )
+
+[node name="Scaffold01" parent="Statics" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.083831, -1.48404 )
+
+[node name="Scaffold02" parent="Statics" instance=ExtResource( 18 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.48929, 0.083831, -1.48404 )
+
+[node name="Scaffold03" parent="Statics" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.978178, 0.083831, -1.48404 )
+
+[node name="Lantern" parent="Statics" instance=ExtResource( 19 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.802938, 0.869817, -1.25666 )
+
+[node name="Told" parent="Statics" instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.970828, 0.622344, -1.48808 )
+
+[node name="bedrollPacked" type="MeshInstance" parent="Statics"]
+transform = Transform( 0.351735, 0, -0.355363, 0, 0.5, 0, 0.355363, 0, 0.351735, 1.09353, 0.622172, -1.65469 )
+use_in_baked_light = true
+mesh = ExtResource( 21 )
+skeleton = NodePath("../..")
 
 [node name="InvisibleWalls" type="Spatial" parent="."]
 __meta__ = {
