@@ -6,7 +6,7 @@
 [ext_resource path="res://models/OBJ/rockFlatGrass.obj" type="ArrayMesh" id=4]
 [ext_resource path="res://scenes/baking/Landscape.lmbake" type="BakedLightmapData" id=5]
 [ext_resource path="res://models/OBJ/rockA.obj" type="ArrayMesh" id=6]
-[ext_resource path="res://models/OBJ/rockFlat.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://models/OBJ/rockFlat.obj" type="PackedScene" id=7]
 [ext_resource path="res://models/col_rockB.tres" type="Shape" id=8]
 [ext_resource path="res://models/OBJ/rockB.obj" type="ArrayMesh" id=9]
 [ext_resource path="res://models/col_rockC.tres" type="Shape" id=10]
@@ -35,6 +35,11 @@ extents = Vector3( 0.969611, 2.68209, 5.01052 )
 
 [node name="MedioAmbiente" parent="." instance=ExtResource( 1 )]
 
+[node name="Luna" type="DirectionalLight" parent="."]
+transform = Transform( -1, -3.55271e-15, -8.74228e-08, -5.17431e-08, 0.806032, 0.591873, 7.04655e-08, 0.591873, -0.806032, 0, 3.18979, 0 )
+light_color = Color( 0, 0.00784314, 0.0352941, 1 )
+shadow_enabled = true
+
 [node name="BakedLightmap" type="BakedLightmap" parent="."]
 extents = Vector3( 13.2849, 10, 14.3231 )
 quality = 2
@@ -44,20 +49,15 @@ light_data = ExtResource( 5 )
 
 [node name="RockyLandscape" type="Node" parent="."]
 
-[node name="RockFloor01" type="MeshInstance" parent="RockyLandscape"]
+[node name="rockFlat" parent="RockyLandscape" instance=ExtResource( 7 )]
 transform = Transform( 10, 0, 0, 0, 4, 0, 0, 0, 10, 0.844615, 0.169154, 4.60592 )
-use_in_baked_light = true
-lightmap_scale = 2
-mesh = ExtResource( 7 )
-__meta__ = {
-"_edit_lock_": true
-}
 
-[node name="StaticBody" type="StaticBody" parent="RockyLandscape/RockFloor01"]
+[node name="StaticBody" type="StaticBody" parent="RockyLandscape/rockFlat"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 collision_layer = 16
 collision_mask = 0
 
-[node name="CollisionShape" type="CollisionShape" parent="RockyLandscape/RockFloor01/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="RockyLandscape/rockFlat/StaticBody"]
 shape = SubResource( 1 )
 
 [node name="GrassFloor01" type="MeshInstance" parent="RockyLandscape"]
