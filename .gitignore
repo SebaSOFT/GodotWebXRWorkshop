@@ -11,3 +11,5 @@ data_*/
 
 build/*
 !build/webxr/.gitkeep
+scenes/baking/*.exr
+scenes/baking/*.exr.import
