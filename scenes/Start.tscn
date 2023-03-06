@@ -10,6 +10,6 @@ __meta__ = {
 }
 
 [node name="ClippedCamera" type="ClippedCamera" parent="."]
-transform = Transform( 0.798478, 0, 0.602024, 0, 1, 0, -0.602024, 0, 0.798478, 0.711, 0.5, 0.724 )
+transform = Transform( 0.987751, 0, -0.156038, 0, 1, 0, 0.156038, 0, 0.987751, 0.709837, 0.498262, 0.722176 )
 current = true
 collision_mask = 49

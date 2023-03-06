@@ -1,10 +1,7 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://models/OBJ/grass.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://models/OBJ/grass.obj" type="PackedScene" id=1]
 
 [node name="Grass" type="Spatial"]
 
-[node name="grassMesh" type="MeshInstance" parent="."]
-generate_lightmap = false
-mesh = ExtResource( 1 )
-skeleton = NodePath("../..")
+[node name="grass" parent="." instance=ExtResource( 1 )]

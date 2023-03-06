@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://models/OBJ/tree.obj" type="PackedScene" id=1]
-[ext_resource path="res://scenes/prefabs/GrassLarge.tscn" type="PackedScene" id=2]
+[ext_resource path="res://models/OBJ/grassLarge.obj" type="PackedScene" id=2]
 
 [sub_resource type="CylinderShape" id=5]
 height = 1.43814
