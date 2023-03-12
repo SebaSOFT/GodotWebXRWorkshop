@@ -5,3 +5,4 @@
 [node name="Grass" type="Spatial"]
 
 [node name="grass" parent="." instance=ExtResource( 1 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )

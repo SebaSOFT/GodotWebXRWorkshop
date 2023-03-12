@@ -10,6 +10,7 @@ radius = 0.0471388
 [node name="Tree" type="Spatial"]
 
 [node name="tree" parent="." instance=ExtResource( 1 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
 
 [node name="StaticBody" type="StaticBody" parent="tree"]
 collision_layer = 32
@@ -20,3 +21,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.691102, 0 )
 shape = SubResource( 5 )
 
 [node name="grassLarge" parent="." instance=ExtResource( 2 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )

@@ -8,6 +8,7 @@ extents = Vector3( 0.245434, 0.0407216, 0.243794 )
 [node name="Spatial" type="Spatial"]
 
 [node name="floor" parent="." instance=ExtResource( 1 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
 
 [node name="StaticBody" type="StaticBody" parent="floor"]
 collision_layer = 32

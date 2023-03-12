@@ -11,6 +11,7 @@ extents = Vector3( 0.0192672, 0.25971, 0.0212471 )
 [node name="Scaffold" type="Spatial"]
 
 [node name="structureBase" parent="." instance=ExtResource( 1 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
 
 [node name="StaticBody" type="StaticBody" parent="structureBase"]
 collision_layer = 32

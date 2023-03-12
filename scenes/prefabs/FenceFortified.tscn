@@ -8,6 +8,7 @@ extents = Vector3( 0.243766, 0.258222, 0.0298276 )
 [node name="Spatial" type="Spatial"]
 
 [node name="fenceFortified" parent="." instance=ExtResource( 1 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
 
 [node name="StaticBody" type="StaticBody" parent="fenceFortified"]
 collision_layer = 16
