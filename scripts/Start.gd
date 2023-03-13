@@ -3,6 +3,12 @@ extends Node
 var webxr_interface
 var vr_supported = false
 
+# A constant to define the dead zone for both the trackpad and the joystick.
+# See https://web.archive.org/web/20191208161810/http://www.third-helix.com/2013/04/12/doing-thumbstick-dead-zones-right.html
+# for more information on what dead zones are, and how we are using them in this project.
+const CONTROLLER_DEADZONE = 0.65
+const MOVEMENT_SPEED = 1.5
+
 func _ready():
 	webxr_interface = ARVRServer.find_interface("WebXR")
 	if webxr_interface:
@@ -12,7 +18,9 @@ func _ready():
 		webxr_interface.connect("session_started", self, "_webxr_session_started")
 		webxr_interface.connect("session_ended", self, "_webxr_session_ended")
 		webxr_interface.connect("session_failed", self, "_webxr_session_failed")
-			
+		
+		webxr_interface.connect("select", self, "_webxr_on_select")
+		
 		webxr_interface.is_session_supported("immersive-vr")
 
 func _webxr_session_supported(session_mode: String, supported: bool) -> void:
@@ -61,17 +69,17 @@ func _webxr_session_ended() -> void:
 func _webxr_session_failed(message: String) -> void:
 	OS.alert("Failed to initialize: " + message)
 
-
 func _on_Button_pressed():
 	if not vr_supported:
 		OS.alert("Your browser doesn't support VR")
 		return
 	start_VR_session()
 
+func _webxr_on_select(controller_id: int):
+	get_tree().reload_current_scene()
+	$UI.visible = false
 
 func _on_ARVRControllerR_button_pressed(button):
 	print ("Mano Derecha PRESS: " + button)
-
-
-func _on_ARVRControllerR_button_release(button):
-	print ("Mano Derecha RELEASE: " + button)
+	get_tree().reload_current_scene()
+	$UI.visible = false

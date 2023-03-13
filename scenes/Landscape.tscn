@@ -1,5 +1,6 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
+[ext_resource path="res://scenes/prefabs/Log.tscn" type="PackedScene" id=1]
 [ext_resource path="res://models/OBJ/rockC.obj" type="PackedScene" id=2]
 [ext_resource path="res://scenes/prefabs/Palet.tscn" type="PackedScene" id=3]
 [ext_resource path="res://models/OBJ/rockFlatGrass.obj" type="PackedScene" id=4]
@@ -20,6 +21,7 @@
 [ext_resource path="res://scenes/prefabs/Lantern.tscn" type="PackedScene" id=19]
 [ext_resource path="res://scenes/prefabs/structTold.tscn" type="PackedScene" id=20]
 [ext_resource path="res://models/OBJ/bedrollPacked.obj" type="PackedScene" id=21]
+[ext_resource path="res://scenes/prefabs/Fish.tscn" type="PackedScene" id=22]
 
 [sub_resource type="ProceduralSky" id=1]
 sky_top_color = Color( 0.00392157, 0.0392157, 0.176471, 1 )
@@ -546,3 +548,32 @@ __meta__ = {
 [node name="CollisionShape" type="CollisionShape" parent="InvisibleWalls/Pared08"]
 transform = Transform( 0.989969, 0, -0.141281, 0, 1, 0, 0.141281, 0, 0.989969, 0.231556, 0.127908, -0.455648 )
 shape = SubResource( 4 )
+
+[node name="Toys" type="Spatial" parent="."]
+
+[node name="Log01" parent="Toys" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.787366, -0.616486, 0, 0.616486, 0.787366, 1.14876, 0.88671, 0.0295607 )
+
+[node name="Log02" parent="Toys" instance=ExtResource( 1 )]
+transform = Transform( 0.814855, -0.357356, -0.456408, 0, 0.787366, -0.616486, 0.579665, 0.502347, 0.641589, 1.27818, 0.718798, 0.0295607 )
+
+[node name="Log03" parent="Toys" instance=ExtResource( 1 )]
+transform = Transform( 0.180965, -0.606308, -0.774366, 0, 0.787366, -0.616486, 0.983489, 0.111563, 0.142486, 1.27818, 0.656039, 0.140322 )
+
+[node name="Log04" parent="Toys" instance=ExtResource( 1 )]
+transform = Transform( -0.759385, -0.437977, -0.481155, -0.0366619, 0.767138, -0.640434, 0.649607, -0.468696, -0.59861, 1.19016, 0.582421, 0.229242 )
+
+[node name="Log05" parent="Toys" instance=ExtResource( 1 )]
+transform = Transform( -0.759385, -0.437977, -0.481155, -0.0366619, 0.767138, -0.640434, 0.649607, -0.468696, -0.59861, 1.78063, 0.716633, -0.061829 )
+
+[node name="Log06" parent="Toys" instance=ExtResource( 1 )]
+transform = Transform( -0.0106925, -0.641129, -0.767359, -0.0366619, 0.767138, -0.640434, 0.999271, 0.021285, -0.0317076, 1.86301, 0.8342, -0.237246 )
+
+[node name="Fish01" parent="Toys" instance=ExtResource( 22 )]
+transform = Transform( -0.0404283, -0.877691, 0.477519, 0.612929, 0.355644, 0.705574, -0.789103, 0.321211, 0.523584, 1.93876, 1.08099, 0.286514 )
+
+[node name="Fish02" parent="Toys" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 0.47791, 0.878409, 0, -0.878409, 0.47791, 1.93416, 1.08099, 0.405779 )
+
+[node name="Fish03" parent="Toys" instance=ExtResource( 22 )]
+transform = Transform( 0.448168, 0.84682, -0.286429, -0.311274, 0.448183, 0.837998, 0.838006, -0.286406, 0.464454, 1.93835, 1.16389, 0.444446 )
